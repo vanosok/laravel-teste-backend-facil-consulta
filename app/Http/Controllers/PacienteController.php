@@ -13,8 +13,7 @@ class PacienteController extends Controller
         $data = $request->validate([
             'nome'       => 'required|string',
             'cpf'        => 'required|string|unique:pacientes,cpf',
-            'celular'    => 'nullable|string',
-            'cidade_id'  => 'required|exists:cidades,id'
+            'celular'    => 'nullable|string'
         ]);
 
         $paciente = Paciente::create($data);

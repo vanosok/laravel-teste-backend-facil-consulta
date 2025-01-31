@@ -27,7 +27,7 @@ class Paciente extends Model
 
     protected $table = 'pacientes';
 
-    protected $fillable = ['nome', 'cpf', 'celular', 'cidade_id'];
+    protected $fillable = ['nome', 'cpf', 'celular'];
 
     protected $hidden = [
         'cidade_id',

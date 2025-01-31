@@ -13,7 +13,6 @@ class CreatePacientesTable extends Migration
             $table->string('nome');
             $table->string('cpf', 20)->unique();
             $table->string('celular', 20)->nullable();
-            $table->foreignId('cidade_id')->constrained('cidades');
             $table->timestamps();
             $table->softDeletes();
         });
