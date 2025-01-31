@@ -21,3 +21,4 @@ git clone https://github.com/vanosok/laravel-teste-backend-facil-consulta.git
 cd laravel-teste-backend-facil-consulta
 ```
 
+Após clonar o repositório, lembre de rodar o migration e também as seeds.
